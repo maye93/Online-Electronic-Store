@@ -1,0 +1,105 @@
+/* ----- FONTS ----- */
+@font-face {
+    font-family: 'PPObjectSans-Heavy';
+    src: url('Fonts/PPObjectSans-Heavy.otf') format('opentype');
+}
+@font-face {
+    font-family: 'PPObjectSans-HeavySlanted';
+    src: url('Fonts/PPObjectSans-HeavySlanted.otf') format('opentype');
+}
+@font-face {
+    font-family: 'PPObjectSans-Regular';
+    src: url('Fonts/PPObjectSans-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'PPObjectSans-Slanted';
+    src: url('Fonts/PPObjectSans-Slanted.otf') format('opentype');
+}
+
+/* ----- TEXTS ----- */
+nav ul li a, p {
+    font-family: "PPObjectSans-Regular", sans-serif;
+}
+
+h1, h3 {
+    font-family: "PPObjectSans-HeavySlanted", sans-serif;
+}
+
+h1 {
+    font-size: 100px;
+}
+
+h2 {
+    font-family: "PPObjectSans-Slanted", sans-serif;
+}
+
+p {
+    font-family: "PPObjectSans-Regular", sans-serif;
+}
+
+/* ----- BODY/HEADER ----- */
+header,
+body {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px;
+}
+
+/* ----- NAVIGATION ----- */
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+/* ----- PRODUCT ----- */
+.product {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* ----- BACKGROUND ----- */
+.css-selector {
+    background: linear-gradient(267deg, #f1dede, #d496a7, #5d576b, #6cd4ff, #fe938c);
+    background-size: 1000% 1000%;
+
+    -webkit-animation: AnimationName 70s ease infinite;
+    -moz-animation: AnimationName 70s ease infinite;
+    animation: AnimationName 70s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}

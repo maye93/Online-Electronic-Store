@@ -17,37 +17,51 @@
 }
 
 /* ----- TEXTS ----- */
-nav ul li a, p {
+a, .button, p{
     font-family: "PPObjectSans-Regular", sans-serif;
-}
-
-h1, h3 {
-    font-family: "PPObjectSans-HeavySlanted", sans-serif;
+    font-size: 20px;
 }
 
 h1 {
+    font-family: "PPObjectSans-HeavySlanted", sans-serif;
     font-size: 100px;
+    margin: 0;
+    line-height: 1;
 }
 
 h2 {
     font-family: "PPObjectSans-Slanted", sans-serif;
+    font-size: 50px;
 }
 
-p {
-    font-family: "PPObjectSans-Regular", sans-serif;
+h3 {
+    font-family: "PPObjectSans-Heavy", sans-serif;
+    font-size: 30px;
+    line-height: 1;
 }
 
-/* ----- BODY/HEADER ----- */
+a {
+    text-decoration: none;
+    color: white;
+}
+
+/* ----- BODY/HEADER/ ----- */
 header,
 body {
     text-align: center;
 }
 
-body {
-    font-family: Arial, sans-serif;
+main {
+    padding: 100px;
 }
 
 header {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    width: 100%;
     padding: 10px;
 }
 
@@ -59,23 +73,194 @@ nav ul {
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
 }
 
 nav ul li a {
-    color: white;
-    text-decoration: none;
+    padding: 50px;
 }
 
-main {
-    padding: 20px;
+/* ----- CONTAINERS/PRODUCTS ----- */
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.containers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: auto;
+    justify-content: center;
+}
+
+.contact-container, .home-container, .product-container {
+    position: relative;
+    text-align: center;
+}
+
+/* ----- CONTACT/HOME ----- */
+
+.contact-container{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.home-container {
+    color: white;
 }
 
 /* ----- PRODUCT ----- */
-.product {
-    border: 1px solid #ddd;
+.product-container {
+    background-color: white;
+    width: 300px;
+    height: 410px;
+    margin: 10px;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.product-container img {
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.product-container p {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.product-container button {
+    margin-top: auto;
+}
+
+/* ----- CART ----- */
+.cart-title {
+    padding: 30px;
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+}
+
+.cart-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cart-products {
+    position: relative;
+    background-color: white;
+    width: 80%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+.cart-products img {
+    object-fit: contain;
+    display: block;
+}
+
+.cart-product-row {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
     padding: 10px;
-    margin-bottom: 20px;
+}
+
+.column {
+    flex: 1; /* Each column takes up equal space */
+    padding: 0 10px;
+}
+
+.left-column {
+    text-align: center; /* Center the image */
+}
+
+.middle-column {
+    text-align: center; /* Center the text in the middle column */
+}
+
+.right-column {
+    text-align: right; /* Align the buttons to the right in the right column */
+}
+
+.quantity {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}
+
+.quantity button {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+}
+
+.quantity button:hover {
+    background-color: white;
+    color: black;
+}
+
+.total {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.cart-container button {
+    margin-top: 20px;
+}
+
+/* Hide cart if it's empty */
+.cart-container {
+    display: none;
+}
+
+/* ----- IMAGES/BUTTONS ----- */
+.home-products {
+    filter: brightness(0.4);
+}
+
+img {
+    width: auto;
+    height: 200px;
+}
+
+.button {
+    background-color: black;
+    color: white;
+
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+    
+    padding: 15px 32px;
+    margin: 4px 2px;
+
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: white;
+    color: black;
+}
+
+.button a:hover {
+    color: black;
 }
 
 /* ----- BACKGROUND ----- */

@@ -115,7 +115,12 @@ nav ul li a {
 }
 
 .right-column {
-    text-align: right;
+    text-align: center;
+}
+
+.left-column img {
+    max-width: 100%;
+    max-height: auto;
 }
 
 /* ----- CONTACT/HOME ----- */
@@ -159,6 +164,7 @@ nav ul li a {
 }
 
 /* ----- CART ----- */
+/* ----- CART ----- */
 .cart-title {
     padding: 30px;
     margin-top: 50px;
@@ -189,6 +195,8 @@ nav ul li a {
 .cart-products img {
     object-fit: contain;
     display: block;
+    width: 100px; /* Adjust the width as needed */
+    height: 100px; /* Adjust the height as needed */
 }
 
 .cart-product-row {
@@ -222,6 +230,12 @@ nav ul li a {
 .total {
     font-weight: bold;
     margin-top: 20px;
+}
+
+/* ----- IMAGES/BUTTONS ----- */
+img {
+    width: auto;
+    height: auto;
 }
 
 /* ----- IMAGES/BUTTONS ----- */

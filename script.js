@@ -129,6 +129,17 @@ function incrementQuantity(item) {
     updateCartCount();
 }
 
+function checkout() {
+    const confirmation = confirm("Are you sure you want to proceed to checkout?");
+    if (confirmation) {
+        // If user confirms, proceed with checkout logic
+        alert("Thank you for your purchase!");
+        clearCart(); // Clear the cart after checkout
+    } else {
+        alert("Your purchase was canceled.");
+    }
+}
+
 // Initialize cart display on page load
 displayCart();
 updateCartCount(); // Call updateCartCount function

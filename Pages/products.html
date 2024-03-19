@@ -98,17 +98,19 @@
         <section id="cart" class="cart-container">
             <h1 class="cart-title">Cart</h1>
 
-            <div id="cart-items" class="cart-items">
-                <div class="quantity">
-                    <button class="decrement" onclick="decrementQuantity(this)">-</button>
-                    <p class="quantity-value">Quantity: 1</p>
-                    <button class="increment" onclick="incrementQuantity(this)">+</button>
+            <div class="cart-items">
+                <div id="cart-items">
+                    <div class="quantity">
+                        <button class="decrement" onclick="decrementQuantity(this)">-</button>
+                        <p class="quantity-value">Quantity: 1</p>
+                        <button class="increment" onclick="incrementQuantity(this)">+</button>
+                    </div>
                 </div>
+    
+                <p class="cart-total">Total: <span id="total">$0.00</span></p>
+                <button class="cart-button" onclick="clearCart()">Clear Cart</button>
+                <button class="cart-button" onclick="checkout()">Checkout</button>
             </div>
-
-            <p>Total: <span id="total">$0.00</span></p>
-            <button onclick="clearCart()">Clear Cart</button>
-            <button onclick="checkout()">Checkout</button>
         </section>
     </main>
     <script src="../script.js"></script>

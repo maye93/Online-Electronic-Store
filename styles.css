@@ -17,7 +17,7 @@
 }
 
 /* ----- TEXTS ----- */
-a, .button, p{
+a, p, .button, .decrement, .increment, .cart-name, .cart-price, .cart-button{
     font-family: "PPObjectSans-Regular", sans-serif;
     font-size: 20px;
 }
@@ -100,6 +100,24 @@ nav ul li a {
     text-align: center;
 }
 
+/* ----- COLUMNS ----- */
+.column {
+    flex: 1;
+    padding: 0 10px;
+}
+
+.left-column {
+    text-align: center;
+}
+
+.middle-column {
+    text-align: center;
+}
+
+.right-column {
+    text-align: right;
+}
+
 /* ----- CONTACT/HOME ----- */
 
 .contact-container{
@@ -155,6 +173,11 @@ nav ul li a {
     align-items: center;
 }
 
+.cart-items {
+    background-color: white;
+    padding-bottom: 20px;
+}
+
 .cart-products {
     position: relative;
     background-color: white;
@@ -175,24 +198,7 @@ nav ul li a {
     padding: 10px;
 }
 
-.column {
-    flex: 1; /* Each column takes up equal space */
-    padding: 0 10px;
-}
-
-.left-column {
-    text-align: center; /* Center the image */
-}
-
-.middle-column {
-    text-align: center; /* Center the text in the middle column */
-}
-
-.right-column {
-    text-align: right; /* Align the buttons to the right in the right column */
-}
-
-.quantity {
+.quantity, .cart-quantity {
     position: absolute;
     top: 50%;
     right: 0;
@@ -218,15 +224,6 @@ nav ul li a {
     margin-top: 20px;
 }
 
-.cart-container button {
-    margin-top: 20px;
-}
-
-/* Hide cart if it's empty */
-.cart-container {
-    display: none;
-}
-
 /* ----- IMAGES/BUTTONS ----- */
 .home-products {
     filter: brightness(0.4);
@@ -237,16 +234,13 @@ img {
     height: 200px;
 }
 
-.button {
+.button, .decrement, .increment, .cart-button {
     background-color: black;
     color: white;
 
     border: black;
     border-style: solid;
     border-width: 1px;
-    
-    padding: 15px 32px;
-    margin: 4px 2px;
 
     text-align: center;
     text-decoration: none;
@@ -254,7 +248,17 @@ img {
     cursor: pointer;
 }
 
-.button:hover {
+.button, .cart-button {
+    padding: 15px 32px;
+    margin: 4px 2px;
+}
+
+.decrement, .increment {
+    margin: 0px 5px;
+    padding: 10px 15px;
+}
+
+.button:hover, .decrement:hover, .increment:hover {
     background-color: white;
     color: black;
 }

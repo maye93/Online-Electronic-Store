@@ -143,3 +143,14 @@ function checkout() {
 // Initialize cart display on page load
 displayCart();
 updateCartCount(); // Call updateCartCount function
+
+document.getElementById('nav-cart').addEventListener('click', function() {
+    // Check if the cart is empty
+    if (cart.length === 0) {
+        // If cart is empty, display popup
+        alert("There are no items in the cart.");
+    } else {
+        // If cart is not empty, proceed to display the cart
+        displayCart();
+    }
+});
